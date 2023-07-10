@@ -2,7 +2,11 @@ import React from 'react';
 
 const ListaTareas = ({ListaTareas}) => {
   return (
+    <div className='ingreso'>
+      
     <input type="text" />
+    </div>
+  
   );
 }
 

@@ -1,10 +1,9 @@
-//import { useState } from 'react'
-//import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
-//import './App.css'
+
+import './App.css';
 
 import Header from './components/Header';
 import Tarea from './components/Tarea';
+
 import ListaTareas from './components/ListaTareas';
 import { useState } from 'react';
 
@@ -22,21 +21,34 @@ function App() {
   
 
   return (
+     
+      
+  
     <div className='App'>
       <Header/>
-      <input type="text"value ={Nota} onChange={(e) => setNota(e.target.value)} />
-      <button onClick={addTarea}>añadir</button>
-      <h3>Lista de Tareas</h3>
-       
-      <ul>
+      <div className='Card'>
+      <input type="text"value ={Nota} onChange={(e) => setNota(e.target.value)}placeholder='Escribe aqui' />
+
+      <button onClick={addTarea} >añadir</button>
+      </div>
+     
+      <ul className='Caja'>
         {
           ListaTareas.map((e,i)=>(
-            <li key ={i}>{e}</li>
+            <li key ={i}>{e}
+
+                        <button onClick={() => deleteTarea(i)}>Borrar</button>
+
+                        <button onClick={() => editarTarea(i)}>Editar</button>
+            
+
+            </li>
           ))
         }
       </ul>
       
     </div>
+   
   );
 }
 
