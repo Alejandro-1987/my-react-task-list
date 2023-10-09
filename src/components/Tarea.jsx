@@ -1,8 +1,11 @@
-const Tarea =(el)=> {
+import React from 'react';
 
-    return  <div>
-       <li>{Nota}</li>
-       <button  onClick={() => deleteTarea(i)}>Borrar</button>
-       </div>
-    }
-    export default Tarea
+const Tarea = (props) => {
+  return (
+    <div>
+      <li>{props.nota}</li>
+    </div>
+  );
+}
+
+export default Tarea;

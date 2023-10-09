@@ -1,8 +1,11 @@
-function Header (arriba) {
+import React from 'react';
 
-return  <>
-   <h1>Lista de Tareas</h1>
-</>
-
+function Header() {
+  return (
+    <div>
+      <h1>Lista de Tareas</h1>
+    </div>
+  );
 }
-export default Header
+
+export default Header;
