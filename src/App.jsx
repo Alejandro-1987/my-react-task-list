@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import ListaTareas from './components/ListaTareas';
@@ -13,9 +13,6 @@ function App() {
 }
 
 export default App;
-
-
-
 
 
 
