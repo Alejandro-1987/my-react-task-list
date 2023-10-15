@@ -26,8 +26,8 @@ const ListaTareas = () => {
 
   function actualizarTarea() {
     updateTask(editTaskId, editTaskText);
-    setEditTaskId(null); // Restablece el estado de edición
-    setEditTaskText(''); // Limpia el texto de edición
+    setEditTaskId(null); 
+    setEditTaskText(''); 
   }
 
   return (
